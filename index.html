@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/images/favicon-32x32.png"
+		/>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Mooli&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="index.css" />
+		<title>
+			Frontend Mentor | Newsletter sign-up form with success message
+		</title>
+	</head>
+	<body>
+		<div class="container">
+			<!-- Sign-up form start -->
+			<div class="newsletter_box">
+				<div class="left_box">
+					<h1>Stay updated!</h1>
+					<p>
+						Join 60,000 product managers receiving monthly updates
+						on:
+					</p>
+					<ul>
+						<li>Product discovery and building what matters</li>
+						<li>Measuring to ensure updates are a success</li>
+						<li>And much more!</li>
+					</ul>
+					<div class="form_box">
+						<form id="newsletter_form">
+							<div class="email_bloc">
+								<div class="title">
+									<label for="email">Email address</label>
+									<span class="email_error"
+										>Valid email required</span
+									>
+								</div>
+								<div class="content">
+									<input
+										type="email"
+										name="email"
+										id="email"
+										placeholder="Your email address"
+										value=""
+									/>
+								</div>
+							</div>
+							<input
+								id="submit"
+								type="submit"
+								value="Subscribe to monthly newsletter"
+							/>
+						</form>
+					</div>
+				</div>
+				<div class="right_box">
+					<img
+						src="./assets/images/illustration-sign-up-mobile.svg"
+						alt=""
+					/>
+				</div>
+			</div>
+			<!-- Sign-up form end -->
+
+			<!-- Success message start -->
+			<div class="success_box">
+				<img
+					src="./assets/images/icon-success.svg"
+					alt=""
+					class="success_icon"
+				/>
+				<h1>Thanks for subscribing!</h1>
+				<p id="success_content"></p>
+				<button id="success_button">Dismiss message</button>
+			</div>
+			<!-- Success message end -->
+		</div>
+
+		<script src="index.js"></script>
+	</body>
+</html>
